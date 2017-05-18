@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:text="${title}"></title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+    </head>   
+    <body>
+        <div class="col-lg-8 col-lg-offset-2" th:fragment="content">
+            <div class="page-header">
+                <h3>List Nasabah</h3>
+            </div>
+            <a th:href="@{/nasabah/insert}" class="btn btn-primary">
+                <b>Tambah Data</b>
+            </a>
+            <div class="page-header">
+                <table class="table table-bordered table-striped table-hover" id="myTabel">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Alamat</th>
+                            <th>Telepon</th>
+                            <th>Opsi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="load-nasabah">
+                            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
